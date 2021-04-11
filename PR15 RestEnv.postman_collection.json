@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "63cc0e1c-3f1c-4c27-8bef-679f49b64bc9",
+		"name": "PR15 RestEnv",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Person1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Ivan\",\r\n    \"lastName\":\"Nikolaev-Axenov\",\r\n    \"middleName\":\"Sergeevich\",\r\n    \"birthDate\":\"15.06.2001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Person2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Ivan\",\r\n    \"lastName\":\"Ivanov\",\r\n    \"middleName\":\"Ivanovich\",\r\n    \"birthDate\":\"02.02.2001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllPosts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "PostMessage1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": {\r\n        \"firstName\":\"Ivan\",\r\n        \"lastName\":\"Ivanov\",\r\n        \"middleName\":\"Ivanovich\",\r\n        \"birthDate\":\"02.02.2001\"\r\n    },\r\n    \"text\": \"Hello!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostMessage2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": {\r\n        \"firstName\": \"Ivan\",\r\n        \"lastName\": \"Nikolaev-Axenov\",\r\n        \"middleName\": \"Sergeevich\",\r\n        \"birthDate\": \"15.06.2001\"\r\n    },\r\n    \"text\": \"Hello!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DelMessagePerson1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": {\r\n        \"firstName\": \"Ivan\",\r\n        \"lastName\": \"Nikolaev-Axenov\",\r\n        \"middleName\": \"Sergeevich\",\r\n        \"birthDate\": \"15.06.2001\"\r\n    },\r\n    \"text\": \"Hello!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePerson",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Ivan\",\r\n    \"lastName\":\"Ivanov\",\r\n    \"middleName\":\"Ivanovich\",\r\n    \"birthDate\":\"02.02.2001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

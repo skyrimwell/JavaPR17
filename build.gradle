@@ -1,0 +1,21 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.4'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'PR15'
+version = '0.0.1'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.hibernate:hibernate-core:5.4.28.Final'
+	implementation 'org.springframework:spring-orm:5.1.6.RELEASE'
+	implementation 'org.postgresql:postgresql:42.2.18'
+	implementation 'com.zaxxer:HikariCP:4.0.2'
+}
